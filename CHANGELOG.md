@@ -1,3 +1,15 @@
+# [0.1.0](https://github.com/MrRabbit1993/DatePicker/compare/v3.10.4...v0.1.0) (2022-02-24)
+
+
+### Features
+
+* 解决临时发布 ([9873b42](https://github.com/MrRabbit1993/DatePicker/commit/9873b42e91b2167fd172e35082f4190af34f03dd))
+* 修改报名处 ([8e29d9d](https://github.com/MrRabbit1993/DatePicker/commit/8e29d9d514008b2fdaf2cbbee92138d4433afe93))
+* 移除测试用例 ([dd7c0de](https://github.com/MrRabbit1993/DatePicker/commit/dd7c0de8ce856e1eff9e5a877a86d03552c40ee7))
+* init ([a1656be](https://github.com/MrRabbit1993/DatePicker/commit/a1656be8c6d8d203ae498cd7fce21076999a9368))
+
+
+
 <a name="3.10.4"></a>
 ## [3.10.4](https://github.com/mengxiong10/vue2-datepicker/compare/v3.10.3...v3.10.4) (2021-12-02)
 
