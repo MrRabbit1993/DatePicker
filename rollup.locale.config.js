@@ -19,9 +19,9 @@ const plugins = [
   commonjs(),
 ];
 
-const umd = fileList.map(file => {
+const umd = fileList.map((file) => {
   const input = path.join(localePath, file);
-  const external = ['vue2-datepicker'];
+  const external = ['cd-datepicker'];
   const name = path.basename(file, '.js').replace(/-(\w+)/g, (m, p1) => p1.toUpperCase());
   return {
     input,
@@ -32,15 +32,15 @@ const umd = fileList.map(file => {
       format: 'umd',
       name: `DatePicker.lang.${name}`,
       globals: {
-        'vue2-datepicker': 'DatePicker',
+        'cd-datepicker': 'DatePicker',
       },
     },
   };
 });
 
-const esm = fileList.map(file => {
+const esm = fileList.map((file) => {
   const input = path.join(localePath, file);
-  const external = id => !id.startsWith('.') && !id.startsWith('/');
+  const external = (id) => !id.startsWith('.') && !id.startsWith('/');
   return {
     input,
     plugins,

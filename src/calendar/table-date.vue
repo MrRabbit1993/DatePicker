@@ -10,9 +10,7 @@
           v-for="item in yearMonth"
           :key="item.panel"
           type="button"
-          :class="
-            `${prefixClass}-btn ${prefixClass}-btn-text ${prefixClass}-btn-current-${item.panel}`
-          "
+          :class="`${prefixClass}-btn ${prefixClass}-btn-text ${prefixClass}-btn-current-${item.panel}`"
           @click="handlePanelChange(item.panel)"
         >
           {{ item.label }}
@@ -50,7 +48,7 @@
               @mouseenter="handleMouseEnter(cell)"
               @mouseleave="handleMouseLeave(cell)"
             >
-              <div>{{ cell.getDate() }}</div>
+              <div :class="isTip(cell) ? 'cell-day tip' : 'cell-day'">{{ cell.getDate() }}</div>
             </td>
           </tr>
         </tbody>
@@ -107,6 +105,10 @@ export default {
       type: Function,
       default: () => [],
     },
+    dateTips: {
+      type: Array,
+      default: () => [],
+    },
   },
   computed: {
     firstDayOfWeek() {
@@ -141,31 +143,39 @@ export default {
     },
   },
   methods: {
+    isTip(date) {
+      const timestamp = new Date(new Date(date).toLocaleDateString()).getTime();
+      const info = this.dateTips.find((_) => String(_.timestamp) === String(timestamp));
+      if (info) {
+        return true;
+      }
+      return false;
+    },
     handleIconLeftClick() {
       this.$emit(
         'changecalendar',
-        setMonth(this.calendar, v => v - 1),
+        setMonth(this.calendar, (v) => v - 1),
         'last-month'
       );
     },
     handleIconRightClick() {
       this.$emit(
         'changecalendar',
-        setMonth(this.calendar, v => v + 1),
+        setMonth(this.calendar, (v) => v + 1),
         'next-month'
       );
     },
     handleIconDoubleLeftClick() {
       this.$emit(
         'changecalendar',
-        setYear(this.calendar, v => v - 1),
+        setYear(this.calendar, (v) => v - 1),
         'last-year'
       );
     },
     handleIconDoubleRightClick() {
       this.$emit(
         'changecalendar',
-        setYear(this.calendar, v => v + 1),
+        setYear(this.calendar, (v) => v + 1),
         'next-year'
       );
     },
@@ -189,7 +199,7 @@ export default {
       }
       const index = target.getAttribute('data-row-col');
       if (index) {
-        const [row, col] = index.split(',').map(v => parseInt(v, 10));
+        const [row, col] = index.split(',').map((v) => parseInt(v, 10));
         const date = this.dates[row][col];
         this.$emit('select', new Date(date));
       }

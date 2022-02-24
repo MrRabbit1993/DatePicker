@@ -68,7 +68,8 @@ export function getCalendar({ firstDayOfWeek, year, month }) {
   }
 
   const lastMonthLength = lastDayInLastMonth - firstDayInLastMonth + 1;
-  const nextMonthLength = 6 * 7 - lastMonthLength - lastDayInCurrentMonth;
+  // 控制几行
+  const nextMonthLength = 5 * 7 - lastMonthLength - lastDayInCurrentMonth;
   for (let i = 1; i <= nextMonthLength; i++) {
     arr.push(createDate(year, month, lastDayInCurrentMonth + i));
   }

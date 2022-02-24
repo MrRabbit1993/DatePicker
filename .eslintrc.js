@@ -34,5 +34,13 @@ module.exports = {
     'vue/require-default-prop': 'off',
     'vue/require-prop-types': 'off',
     'vue/no-v-html': 'off',
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        js: 'never',
+        vue: 'never',
+      },
+    ],
   },
 };
