@@ -1,3 +1,14 @@
+## [0.1.3](https://github.com/MrRabbit1993/DatePicker/compare/v0.1.0...v0.1.3) (2022-02-24)
+
+
+### Features
+
+* fix ([8821580](https://github.com/MrRabbit1993/DatePicker/commit/8821580329f6d8ed3a5df9fba79c6819c91b8b11))
+* fix ([b1c3380](https://github.com/MrRabbit1993/DatePicker/commit/b1c3380216586fd5a4cbc6ac9ec911345a9c2bbb))
+* fix ([de57767](https://github.com/MrRabbit1993/DatePicker/commit/de57767978c4da2781dac304a64e22fe381a0f59))
+
+
+
 # [0.1.0](https://github.com/MrRabbit1993/DatePicker/compare/v3.10.4...v0.1.0) (2022-02-24)
 
 
