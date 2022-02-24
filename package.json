@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/rabbita993/datepicker.git"
+    "url": "https://github.com/MrRabbit1993/DatePicker.git"
   },
   "keywords": [
     "vue",
@@ -42,9 +42,9 @@
   "author": "MrRabbit",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitee.com/rabbita993/datepicker.git/issues"
+    "url": "https://github.com/MrRabbit1993/DatePicker.git/issues"
   },
-  "homepage": "https://gitee.com/rabbita993/datepicker.git#readme",
+  "homepage": "https://github.com/MrRabbit1993/DatePicker.git#readme",
   "peerDependencies": {
     "vue": "^2.5.0"
   },
