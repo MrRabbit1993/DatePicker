@@ -1,10 +1,10 @@
 {
-  "name": "cd-datepicker",
+  "name": "simple-datepicker",
   "description": "A Datepicker Component For Vue2",
   "main": "index.js",
   "module": "index.esm.js",
   "alias": {
-    "cd-datepicker": "./src/index.js"
+    "simple-datepicker": "./src/index.js"
   },
   "files": [
     "/locale",

@@ -21,7 +21,7 @@ const plugins = [
 
 const umd = fileList.map((file) => {
   const input = path.join(localePath, file);
-  const external = ['cd-datepicker'];
+  const external = ['simple-datepicker'];
   const name = path.basename(file, '.js').replace(/-(\w+)/g, (m, p1) => p1.toUpperCase());
   return {
     input,
@@ -32,7 +32,7 @@ const umd = fileList.map((file) => {
       format: 'umd',
       name: `DatePicker.lang.${name}`,
       globals: {
-        'cd-datepicker': 'DatePicker',
+        'simple-datepicker': 'DatePicker',
       },
     },
   };
