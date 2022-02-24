@@ -1,3 +1,12 @@
+## [0.1.8](https://github.com/MrRabbit1993/DatePicker/compare/v0.1.7...v0.1.8) (2022-02-24)
+
+
+### Features
+
+* 配置仓库 ([80e22cf](https://github.com/MrRabbit1993/DatePicker/commit/80e22cf9a582ee5df6b3409284719785f074d1c8))
+
+
+
 ## [0.1.7](https://github.com/MrRabbit1993/DatePicker/compare/v0.1.6...v0.1.7) (2022-02-24)
 
 
