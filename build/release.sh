@@ -22,9 +22,9 @@ then
   # publish
   git push origin master
   git push origin refs/tags/v$VERSION
-  git checkout dev
+  git checkout develop
   git rebase master
-  git push origin dev
+  git push origin develop
 
   if [[ $VERSION =~ "beta" ]]
   then
